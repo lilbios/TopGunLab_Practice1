@@ -1,48 +1,38 @@
-﻿using System;
+﻿using DomainLayer.GameStates;
+using DomainLayer.MatchSnapShoot;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DomainLayer.Models
 {
-    enum Weather { 
-            Sunny = 0,
-            Rainy = -5,
-            Windy = -2
-    }
     public class Match
     {
+        public IState State { get; set; }
         public DateTime DateMatch { get; private set; }
         public string Stadium { get; private set; }
-        public int PassedTime { get; private set; }
+        public int GameTime { get; private set; } = 90;
+        public int PassedTime { get; private set; } = 0;
+        public Team Team1 { get; private set; }
+        public Team Team2 { get; private set; }
+        public int FirstTeamScore { get; set; }
+        public int SecondTeamScore { get;set; }
 
-
-        public Match(string stadium,DateTime dateTime)
+        public Match(string stadium,DateTime date)
         {
             Stadium = stadium;
-            DateMatch = dateTime; 
+            DateMatch = date;
         }
 
-        public bool StartMatch(Team team1,Team team2,Referee referee)
+        public Memento CreateSnapShoot() {
+
+            return new Memento(DateMatch,Stadium,FirstTeamScore,SecondTeamScore);
+        }
+        public void PrintMathResult(СareTaker careTaker)
         {
-            int gameTime = 90;
-            for (int i = 0; i < gameTime; i++)
-            {
 
-            }
-            return false;
         }
-
-        public bool StartPenaltySeries(Team team1, Team team2)
-        {
-            return false;
-        }
-        public bool StartOverTime(Team team1, Team team) {
-            return false;
-        }
-
-        public string GetMatchResult() {
-            return null;
-        }
+        
 
     }
 }

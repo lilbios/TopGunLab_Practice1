@@ -1,0 +1,13 @@
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.csprojAssemblyReference.cache
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.AssemblyInfoInputs.cache
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.AssemblyInfo.cs
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.deps.json
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\DomainLayer.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\ListImpl.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\bin\Debug\netcoreapp3.1\ListImpl.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.csproj.CopyComplete
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\DomainLayer\obj\Debug\netcoreapp3.1\DomainLayer.pdb

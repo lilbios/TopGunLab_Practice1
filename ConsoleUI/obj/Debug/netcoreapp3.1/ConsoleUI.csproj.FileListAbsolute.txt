@@ -9,3 +9,10 @@ D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\obj\Debug\netcoreapp3.1\Con
 D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.AssemblyInfo.cs
 D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.dll
 D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\DomainLayer.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\InfrastructureLayer.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\ListImpl.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\DomainLayer.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\ListImpl.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.CopyComplete

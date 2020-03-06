@@ -1,11 +1,64 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "DomainLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "InfrastructureLayer": "1.0.0",
+          "ListImpl": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DomainLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DomainLayer.dll": {}
+        }
+      },
+      "InfrastructureLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/InfrastructureLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InfrastructureLayer.dll": {}
+        }
+      },
+      "ListImpl/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ListImpl.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ListImpl.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DomainLayer/1.0.0": {
+      "type": "project",
+      "path": "../DomainLayer/DomainLayer.csproj",
+      "msbuildProject": "../DomainLayer/DomainLayer.csproj"
+    },
+    "InfrastructureLayer/1.0.0": {
+      "type": "project",
+      "path": "../InfrastructureLayer/InfrastructureLayer.csproj",
+      "msbuildProject": "../InfrastructureLayer/InfrastructureLayer.csproj"
+    },
+    "ListImpl/1.0.0": {
+      "type": "project",
+      "path": "../ListImpl/ListImpl.csproj",
+      "msbuildProject": "../ListImpl/ListImpl.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "DomainLayer >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\yehor_shamrai\\.nuget\\packages\\": {},
@@ -39,7 +92,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\DomainLayer\\DomainLayer.csproj": {
+              "projectPath": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\DomainLayer\\DomainLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

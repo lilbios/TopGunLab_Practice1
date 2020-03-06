@@ -1,5 +1,8 @@
-﻿using System;
+﻿using DomainLayer.Models;
+using ListImpl;
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 namespace ConsoleUI
 {
@@ -7,11 +10,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Dictionary<int,int> people = new Dictionary<int, int>();
-            people.Add(2,1);
-            people.Add(3,7);
-            people.Add(1,9);
-
+            Coach coach = new Coach("Valera",1.5);
+            
         }
     }
 }

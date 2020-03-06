@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainLayer.Models
 {
-    public class Player : IComparable
+    public class Player:IComparable
     {
         public string Name { get; private set; }
         public int Number { get; private set; }
@@ -22,7 +22,8 @@ namespace DomainLayer.Models
         {
             throw new NotImplementedException();
         }
-        public bool KickBall() {
+        public bool KickBall()
+        {
             return false;
         }
         public override bool Equals(object obj)
@@ -40,5 +41,6 @@ namespace DomainLayer.Models
             hash = hash ^ Skill.GetHashCode();
             return hash;
         }
+
     }
 }

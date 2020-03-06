@@ -7,14 +7,52 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "ConsoleUI/1.0.0": {
+        "dependencies": {
+          "DomainLayer": "1.0.0",
+          "ListImpl": "1.0.0"
+        },
         "runtime": {
           "ConsoleUI.dll": {}
+        }
+      },
+      "DomainLayer/1.0.0": {
+        "dependencies": {
+          "InfrastructureLayer": "1.0.0",
+          "ListImpl": "1.0.0"
+        },
+        "runtime": {
+          "DomainLayer.dll": {}
+        }
+      },
+      "InfrastructureLayer/1.0.0": {
+        "runtime": {
+          "InfrastructureLayer.dll": {}
+        }
+      },
+      "ListImpl/1.0.0": {
+        "runtime": {
+          "ListImpl.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ConsoleUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DomainLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InfrastructureLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ListImpl/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
