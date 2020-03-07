@@ -4,7 +4,7 @@ using System.Text;
 
 namespace InfrastructureLayer
 {
-    sealed class SingletonRandom
+    public sealed class SingletonRandom
     {
         private static Random _instance;
 

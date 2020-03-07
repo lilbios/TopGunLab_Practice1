@@ -1,4 +1,5 @@
-﻿using ListImpl;
+﻿using InfrastructureLayer;
+using ListImpl;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -37,6 +38,7 @@ namespace DomainLayer.Models
         public bool GiveRedCard(Player player)
         {
             Console.WriteLine($"Red card!Player number{player.Number} leaves football field");
+            return false;
         }
         public void StartMatch()
         {
@@ -45,6 +47,10 @@ namespace DomainLayer.Models
         public void MakeHalfTime()
         {
             Console.WriteLine("The referee takes out the whistle! Teams go for a break");
+        }
+        public int GiveAdditionalTime() {
+            var random = SingletonRandom.GetRandom();
+            return random.Next(0,10);
         }
     }
 }

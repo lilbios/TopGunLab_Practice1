@@ -16,11 +16,11 @@ namespace DomainLayer.Models
             Name = name;
             Lucky = lucky;
         }
-        public void ToCheerUp(MyList<Player> players)
+        public void ToCheerUp(ref MyList<Player> players)
         {
 
         }
-        public void ToDemoralize(MyList<Player> players)
+        public void ToDemoralize( ref MyList<Player> players)
         {
 
         }

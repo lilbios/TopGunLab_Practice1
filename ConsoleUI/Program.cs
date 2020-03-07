@@ -1,4 +1,6 @@
-﻿using DomainLayer.Models;
+﻿using DomainLayer.GameStates;
+using DomainLayer.Models;
+using InfrastructureLayer;
 using ListImpl;
 using System;
 using System.Collections.Generic;
@@ -10,8 +12,14 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Coach coach = new Coach("Valera",1.5);
-            
+
+            var random = SingletonRandom.GetRandom();
+            Type myClassType = Type.GetType("Weather");
+            Console.WriteLine();
+
+
+
+
         }
     }
 }

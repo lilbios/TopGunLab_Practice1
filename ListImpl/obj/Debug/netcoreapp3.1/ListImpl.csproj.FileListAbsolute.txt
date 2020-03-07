@@ -5,3 +5,4 @@ D:\TopGunLab\Practices\TopGunLab_Practice1\ListImpl\obj\Debug\netcoreapp3.1\List
 D:\TopGunLab\Practices\TopGunLab_Practice1\ListImpl\obj\Debug\netcoreapp3.1\ListImpl.AssemblyInfo.cs
 D:\TopGunLab\Practices\TopGunLab_Practice1\ListImpl\obj\Debug\netcoreapp3.1\ListImpl.dll
 D:\TopGunLab\Practices\TopGunLab_Practice1\ListImpl\obj\Debug\netcoreapp3.1\ListImpl.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\ListImpl\obj\Debug\netcoreapp3.1\ListImpl.csprojAssemblyReference.cache
