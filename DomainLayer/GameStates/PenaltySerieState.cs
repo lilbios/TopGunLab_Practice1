@@ -22,8 +22,6 @@ namespace DomainLayer.GameStates
 
         }
 
-        public event IState.MatchBreak OnBreak;
-
         public void Start()
         {
             var random = SingletonRandom.GetRandom();

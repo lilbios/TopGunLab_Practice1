@@ -12,6 +12,7 @@ namespace ListImpl
         void RemoveFirst();
         void RemoveLast();
         bool Remove(T value);
+        T FindByIndex(int index);
         void Clear();
     }
 }

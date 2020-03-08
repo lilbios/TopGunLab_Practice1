@@ -17,6 +17,7 @@ namespace ConsoleUI
             Parser parser = new Parser();
             Team team1 = parser.GetTeam();
             Team team2 = parser.GetTeam();
+            Func<int, int, bool> isMatchOver;
 
             int[] weatherCoefficiend = (int[])Enum.GetValues(typeof(Weather));
             var match = new Match("Stadium#1",DateTime.Now);
@@ -24,9 +25,15 @@ namespace ConsoleUI
             match.MatchNotify += match.StartMatch;
             match.MatchStageNotify += match.NextMatchStage;
             match.StartMatch();
-            match.NextMatchStage(match);
 
-
+            if (true) {
+                match.NextMatchStage(match);
+            } else if (true) {
+                match.NextMatchStage(match);
+            }
+            else { 
+            
+            }
 
 
 

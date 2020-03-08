@@ -6,6 +6,8 @@ using System.Text;
 namespace DomainLayer.GameStates
 {
     public interface IState {
+        public int ScoreTeam1 { get; set; }
+        public int ScoreTeam2 { get; set; }
         public void Handle(Match match);
         public void Start();
     }

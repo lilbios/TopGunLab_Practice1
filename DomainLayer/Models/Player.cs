@@ -24,7 +24,7 @@ namespace DomainLayer.Models
         {
             throw new NotImplementedException();
         }
-        public bool KickBall(Team enemyTeam,int teamSkill)
+        public bool KickBall(Team enemyTeam,double teamSkill)
         {
             var random = SingletonRandom.GetRandom();
             int percentEnemyPlayersSkill = (enemyTeam.Players.Count * 80) / 100;

@@ -145,5 +145,18 @@ namespace ListImpl
                 current = current.Next;
             }
         }
+
+        public T FindByIndex(int index)
+        {
+            Node<T> pointer = Head;
+            int i = 0;
+            while (pointer != null)
+            {
+                if (i == index) break;
+                pointer = pointer.Next;
+                ++i;
+            }
+            return pointer.Value;
+        }
     }
 }
