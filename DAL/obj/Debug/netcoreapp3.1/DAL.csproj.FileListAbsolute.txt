@@ -1,8 +1,0 @@
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\bin\Debug\netcoreapp3.1\DAL.dll
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\obj\Debug\netcoreapp3.1\DAL.dll
-D:\TopGunLab\Practices\TopGunLab_Practice1\DAL\obj\Debug\netcoreapp3.1\DAL.pdb

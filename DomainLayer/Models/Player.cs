@@ -1,4 +1,6 @@
-﻿using System;
+﻿using InfrastructureLayer;
+using ListImpl;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -22,9 +24,20 @@ namespace DomainLayer.Models
         {
             throw new NotImplementedException();
         }
-        public bool KickBall()
+        public bool KickBall(Team enemyTeam,int teamSkill)
         {
-            return false;
+            var random = SingletonRandom.GetRandom();
+            int percentEnemyPlayersSkill = (enemyTeam.Players.Count * 80) / 100;
+            bool[] gamefactors = new bool[2];
+            gamefactors[0] = teamSkill > enemyTeam.TotalSkillTeam;
+            foreach (var item in enemyTeam.Players)
+            {
+                if (Skill > item.Skill) --percentEnemyPlayersSkill;
+            }
+            gamefactors[1] = percentEnemyPlayersSkill <= 0;
+            return gamefactors[random.Next(0,1)];
+
+
         }
         public override bool Equals(object obj)
         {

@@ -16,3 +16,5 @@ D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\Dom
 D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\InfrastructureLayer.pdb
 D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\ListImpl.pdb
 D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.CopyComplete
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\ConsoleUI\bin\Debug\netcoreapp3.1\WebDriver.dll

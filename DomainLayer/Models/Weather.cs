@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainLayer.Models
 {
-    enum Weather
+    public enum Weather
     {
         Sunny = 0,
         Rainy = -5,

@@ -7,12 +7,11 @@ namespace DomainLayer.MatchSnapShoot
 {
     public class СareTaker
     {
-        public Memento Memento{get;set;}
-        public IState[] History { get; set;}
+        private Stack<Memento> History { get; set;}
         public СareTaker()
         {
-            History = new IState[3];
+            History = new Stack<Memento>();
         }
-
+        public Memento LastState() => History.Pop();
     }
 }

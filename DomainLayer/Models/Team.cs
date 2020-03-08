@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using static DomainLayer.Models.Referee;
 
 namespace DomainLayer.Models
 {
@@ -40,12 +41,9 @@ namespace DomainLayer.Models
 
         }
 
-        //Here calculates total team skill using formula: (playerN.skill * playerN.luck +...+player11.skill * player11.luck) * Coach.luck.
+        //Here calculates total team skill with formula: (playerN.skill * playerN.luck +...+player11.skill * player11.luck) * coach.luck.
         //This coefficient can be changed druing the match.
-        public double MeasureTotalTeamSkill()
-        {
-            return Players.Select(p => p.Skill * p.Lucky).Sum() * Coach.Lucky;
-        }
+        public double MeasureTotalTeamSkill() => Players.Select(p => p.Skill * p.Lucky).Sum() * Coach.Lucky;
+
     }
 }
-

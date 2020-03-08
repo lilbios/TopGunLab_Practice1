@@ -1,14 +1,15 @@
-﻿using DomainLayer.Models;
+﻿using DomainLayer.MatchSnapShoot;
+using DomainLayer.Models;
 using InfrastructureLayer;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static DomainLayer.Models.Match;
 
 namespace DomainLayer.GameStates
 {
     public class PenaltySerieState : IState
     {
-
         public Team Team1 { get; private set; }
         public Team Team2 { get; private set; }
         public int ScoreTeam1 { get; private set; }
@@ -21,9 +22,12 @@ namespace DomainLayer.GameStates
 
         }
 
+        public event IState.MatchBreak OnBreak;
+
         public void Start()
         {
             var random = SingletonRandom.GetRandom();
+
             for (int i = 0; i < Shots; i++)
             {
 
@@ -32,14 +36,14 @@ namespace DomainLayer.GameStates
 
         }
 
-        public void Hanle(Match match)
+        public void Handle(Match match)
         {
             match.State = null;
         }
 
-        public bool IsOver(int score_1, int score_2)
+        public Memento CreateMemento(string team1Title, string team2Title, int score1, int score2)
         {
-
+            return new Memento(team1Title, team2Title, score1, score2);
         }
     }
 }

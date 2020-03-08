@@ -6,9 +6,10 @@ using System.Text;
 
 namespace DomainLayer.Models
 {
-    public delegate void RefereeEventHandler();
+   
     public class Referee
     {
+
         public string Name { get; private set; }
         public int FavouriteTeam { get; private set; }
         public MyList<Player> Violators { get; private set; }
@@ -43,10 +44,10 @@ namespace DomainLayer.Models
         public void StartMatch()
         {
             Console.WriteLine("Teams are ready.Referee starts the match!"); 
-        }
-        public void MakeHalfTime()
+        } 
+        public void MakeHalfTime(string teamName)
         {
-            Console.WriteLine("The referee takes out the whistle! Teams go for a break");
+            Console.WriteLine($"Team {teamName} go for a break");
         }
         public int GiveAdditionalTime() {
             var random = SingletonRandom.GetRandom();

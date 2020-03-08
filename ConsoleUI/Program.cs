@@ -14,8 +14,19 @@ namespace ConsoleUI
         {
 
             var random = SingletonRandom.GetRandom();
-            Type myClassType = Type.GetType("Weather");
-            Console.WriteLine();
+            Parser parser = new Parser();
+            Team team1 = parser.GetTeam();
+            Team team2 = parser.GetTeam();
+
+            int[] weatherCoefficiend = (int[])Enum.GetValues(typeof(Weather));
+            var match = new Match("Stadium#1",DateTime.Now);
+            var matchState = new MatchState(null,null,null);
+            match.MatchNotify += match.StartMatch;
+            match.MatchStageNotify += match.NextMatchStage;
+            match.StartMatch();
+            match.NextMatchStage(match);
+
+
 
 
 

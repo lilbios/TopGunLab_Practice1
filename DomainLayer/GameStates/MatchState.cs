@@ -1,17 +1,22 @@
-﻿using DomainLayer.Models;
+﻿using DomainLayer.MatchSnapShoot;
+using DomainLayer.Models;
 using InfrastructureLayer;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static DomainLayer.Models.Match;
+using static DomainLayer.Models.Referee;
+using static DomainLayer.Models.Team;
 
 namespace DomainLayer.GameStates
 {
    public  class MatchState : IState
     {
+        
         public Referee Referee { get; private set; }
         public int MatchTime { get; set; } = 90;
-        public int ScoreTeam1 { get; private set; }
-        public int ScoreTeam2 { get; private set; }
+        public int ScoreTeam1 { get; set; }
+        public int ScoreTeam2 { get;  set; }
         public Team Team1 { get; private set; }
         public Team Team2 { get; private set; }
     
@@ -23,44 +28,39 @@ namespace DomainLayer.GameStates
             Team2 = secondTeam;
             Referee = referee;
         }
-        public void StartMatch()
-        {
-            var random = SingletonRandom.GetRandom();
 
-            for (int i = 0; i <= MatchTime; i++) {
-                if (i == 45) { 
-                    
-                }
-                if (i == 90) {
-                    MatchTime = Referee.GiveAdditionalTime();
-                }
-                if (Team1.TotalSkillTeam > Team2.TotalSkillTeam)
-                {
 
-                }
-                else if (Team1.TotalSkillTeam > Team2.TotalSkillTeam)
-                {
-
-                }
-                else {
-                    break;
-                }
-            }
-        }
-
-        public void Hanle(Match match)
+        public void Handle(Match match)
         {
             match.State = new OverTimeState(Team1,Team2,Referee);
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
-        }
+            var random = SingletonRandom.GetRandom();
+            List<Team> teams = new List<Team>();
+            teams.Add(Team1);
+            teams.Add(Team2);
 
-        public bool IsOver(int score_1, int score_2)
-        {
-            return (score_1 > score_2 || score_1 < score_2);
+
+
+
+            for (int i = 0; i <= MatchTime; i++)
+            {
+                if (i == 45)
+                {
+                    Referee.MakeHalfTime(Team1.TeamName);
+                    Referee.MakeHalfTime(Team2.TeamName);
+                }
+                if (i == 90)
+                { 
+                }
+               
+            }
         }
+        public Memento CreateMemento(string team1Title, string team2Title, int score1, int score2) {
+            return new Memento(team1Title,team2Title,score1,score2);
+        }
+        
     }
 }

@@ -5,10 +5,8 @@ using System.Text;
 
 namespace DomainLayer.GameStates
 {
-    public interface IState
-    {
-        public void Hanle(Match match);
+    public interface IState {
+        public void Handle(Match match);
         public void Start();
-        public bool IsOver(int score_1,int score_2);
     }
 }

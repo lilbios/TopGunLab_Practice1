@@ -6,15 +6,16 @@ namespace DomainLayer.MatchSnapShoot
 {
     public class Memento
     {
-        public DateTime DateMatch { get; private set; }
-        public string Stadium { get; private set; }
         public int FirstTeamScore { get; set; }
         public int SecondTeamScore { get; set; }
+        public string FirstTeam { get; private set; }
+        public string SecondTeam { get; private set; }
 
-        public Memento(DateTime dateMatch, string stadium, int score1,int score2 )
+
+        public Memento(string team1,string team2,int score1,int score2)
         {
-            DateMatch = dateMatch;
-            Stadium = stadium;
+            FirstTeam = team1;
+            SecondTeam = team2;
             FirstTeamScore = score1;
             SecondTeamScore = score2;
         }

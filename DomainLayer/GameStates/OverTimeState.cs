@@ -1,8 +1,10 @@
-﻿using DomainLayer.Models;
+﻿using DomainLayer.MatchSnapShoot;
+using DomainLayer.Models;
 using InfrastructureLayer;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static DomainLayer.Models.Match;
 
 namespace DomainLayer.GameStates
 {
@@ -23,7 +25,7 @@ namespace DomainLayer.GameStates
             Referee = referee;
         }
 
-      
+        public event IState.MatchBreak OnBreak;
 
         public void Start()
         {
@@ -36,30 +38,25 @@ namespace DomainLayer.GameStates
                 }
                 if (i == 30)
                 {
-                    MatchTime = Referee.GiveAdditionalTime();
+                   
                 }
-                else if (Team1.TotalSkillTeam > Team2.TotalSkillTeam)
-                {
 
-                }
-                else
-                {
-                    break;
-                }
+                
             }
            
         }
         
 
-        public void Hanle(Match match)
+        public void Handle(Match match)
         {
             match.State = new PenaltySerieState(Team1,Team2);
         }
 
 
-        public bool IsOver(int score_1, int score_2)
+     
+        public Memento CreateMemento(string team1Title, string team2Title, int score1, int score2)
         {
-            return (score_1 > score_2 || score_1 < score_2);
+            return new Memento(team1Title,team2Title,score1,score2);
         }
     }
 }
