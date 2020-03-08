@@ -19,7 +19,7 @@ namespace DomainLayer.GameStates
         public int ScoreTeam2 { get;  set; }
         public Team Team1 { get; private set; }
         public Team Team2 { get; private set; }
-        public СareTaker CareTaker { get; private set; }
+        public СareTaker CareTaker { get; }
 
 
 

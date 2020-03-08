@@ -9,7 +9,7 @@ namespace DomainLayer.Models
 {
     public class Match
     {
-        public delegate void GetResult(СareTaker careTaker);
+
         public delegate void MatchEventHandler();
         public delegate void MatchStageHandler(Match match);
         public event MatchEventHandler MatchNotify;
@@ -23,7 +23,7 @@ namespace DomainLayer.Models
             Stadium = stadium;
             DateMatch = date;
         }
-        public void PrintMathResult(СareTaker careTaker)
+        public void PrintMatchResult(СareTaker careTaker)
         {
             var state = careTaker.LastState();
             Console.WriteLine($"{state.FirstTeam}:{state.FirstTeamScore}-{state.SecondTeam}:{state.SecondTeam}");        

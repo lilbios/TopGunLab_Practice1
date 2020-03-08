@@ -12,11 +12,12 @@ namespace DomainLayer.GameStates
     {
         public Referee Referee { get; private set; }
         public int MatchTime { get; set; } = 30;
-        public int ScoreTeam1 { get; private set; }
-        public int ScoreTeam2 { get; private set; }
+        public int ScoreTeam1 { get; set; }
+        public int ScoreTeam2 { get; set; }
         public Team Team1 { get; private set; }
         public Team Team2 { get; private set; }
-       
+        public СareTaker CareTaker { get; }
+
 
 
         public OverTimeState(Team firstTeam, Team secondTeam, Referee referee)
@@ -24,9 +25,8 @@ namespace DomainLayer.GameStates
             Team1 = firstTeam;
             Team2 = secondTeam;
             Referee = referee;
+            CareTaker = new СareTaker();
         }
-
-
 
         public void Start()
         {

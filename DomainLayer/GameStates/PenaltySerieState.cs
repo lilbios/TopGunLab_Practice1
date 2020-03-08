@@ -1,10 +1,6 @@
 ﻿using DomainLayer.MatchSnapShoot;
 using DomainLayer.Models;
 using InfrastructureLayer;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using static DomainLayer.Models.Match;
 
 namespace DomainLayer.GameStates
 {
@@ -12,13 +8,15 @@ namespace DomainLayer.GameStates
     {
         public Team Team1 { get; private set; }
         public Team Team2 { get; private set; }
-        public int ScoreTeam1 { get; private set; }
-        public int ScoreTeam2 { get; private set; }
+        public int ScoreTeam1 { get; set; }
+        public int ScoreTeam2 { get;  set; }
         public int Shots { get; private set; } = 5;
+        public СareTaker CareTaker { get; }
         public PenaltySerieState(Team firstTeam, Team secondTeam)
         {
             Team1 = firstTeam;
             Team2 = secondTeam;
+            CareTaker = new СareTaker();
 
         }
 
