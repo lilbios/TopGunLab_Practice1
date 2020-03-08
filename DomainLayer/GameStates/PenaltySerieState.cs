@@ -64,7 +64,7 @@ namespace DomainLayer.GameStates
                 }
 
             }
-            Console.WriteLine($"Team {teamWinner} wins!");
+            Console.WriteLine($"Team {teamWinner} wins! by penalty");
           
 
         }
