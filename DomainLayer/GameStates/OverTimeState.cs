@@ -66,7 +66,8 @@ namespace DomainLayer.GameStates
                     {
                         ++ScoreTeam2;
                     }
-
+                    CareTaker.LastState();
+                    CareTaker.PushEvent(new Memento(Team1.TeamName, Team2.TeamName, ScoreTeam1, ScoreTeam2));
                 }
             }
         }

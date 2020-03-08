@@ -24,7 +24,7 @@ namespace ConsoleUI
             Team team2 = parser.GetTeam();
             
             Func<int, int, bool> isMatchOver = delegate(int score1,int score2) { return score1 > score2 || score2 > score1; };
-
+            //Weathe coeficients that have got influence on match
             int[] weatherCoefficiend = (int[])Enum.GetValues(typeof(Weather));
             var matchState = new MatchState(null,null,null);
             match.MatchNotify += match.StartMatch;

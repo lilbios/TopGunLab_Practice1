@@ -5,3 +5,4 @@ D:\TopGunLab\Practices\TopGunLab_Practice1\InfrastructureLayer\obj\Debug\netcore
 D:\TopGunLab\Practices\TopGunLab_Practice1\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.AssemblyInfo.cs
 D:\TopGunLab\Practices\TopGunLab_Practice1\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.dll
 D:\TopGunLab\Practices\TopGunLab_Practice1\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\InfrastructureLayer\obj\Debug\netcoreapp3.1\InfrastructureLayer.csprojAssemblyReference.cache

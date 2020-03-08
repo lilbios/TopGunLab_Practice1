@@ -39,6 +39,11 @@ namespace DomainLayer.Models
 
 
         }
+        public bool PenaltyKick()
+        {
+            var random = SingletonRandom.GetRandom();
+            return Skill * Lucky > random.Next(5,150);
+        }
         public override bool Equals(object obj)
         {
             if (obj == null || this.GetType() != obj.GetType()) return false;

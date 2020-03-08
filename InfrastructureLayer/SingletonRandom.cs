@@ -16,5 +16,10 @@ namespace InfrastructureLayer
             }
             return _instance;
         }
+        public double GetDoubleInRange(double minimum, double maximum)
+        {
+            Random random = new Random();
+            return random.NextDouble() * (maximum - minimum) + minimum;
+        }
     }
 }
