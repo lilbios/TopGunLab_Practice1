@@ -22,6 +22,8 @@ namespace InfrastructureLayer
             RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Clients\StartMenuInternet");
             var browsers = key.GetSubKeyNames();
             var currentDirectory = Directory.GetCurrentDirectory();
+            int lastInd = currentDirectory.LastIndexOf("TopGunLab_Practice1") + 20;
+
             if (browsers.Length != 0)
             {
 
@@ -29,7 +31,7 @@ namespace InfrastructureLayer
                 {
 
 
-                    "Google Chrome" => new ChromeDriver(currentDirectory[0..currentDirectory.LastIndexOf("TopGunLab_Practice1")] + @"DomainLayer\Drivers\"),
+                    "Google Chrome" => new ChromeDriver(currentDirectory[0..lastInd] + @"DomainLayer\Drivers\"),
                     "Safari" => new SafariDriver(),
                     _ => new InternetExplorerDriver(),
                 };

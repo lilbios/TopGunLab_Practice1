@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\Home_Work\\Home_Work.csproj": {}
+    "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\HomeWork\\HomeWork.csproj": {}
   },
   "projects": {
-    "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\Home_Work\\Home_Work.csproj": {
+    "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\HomeWork\\HomeWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\Home_Work\\Home_Work.csproj",
-        "projectName": "Home_Work",
-        "projectPath": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\Home_Work\\Home_Work.csproj",
+        "projectUniqueName": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\HomeWork\\HomeWork.csproj",
+        "projectName": "HomeWork",
+        "projectPath": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\HomeWork\\HomeWork.csproj",
         "packagesPath": "C:\\Users\\yehor_shamrai\\.nuget\\packages\\",
-        "outputPath": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\Home_Work\\obj\\",
+        "outputPath": "D:\\TopGunLab\\Practices\\TopGunLab_Practice1\\HomeWork\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

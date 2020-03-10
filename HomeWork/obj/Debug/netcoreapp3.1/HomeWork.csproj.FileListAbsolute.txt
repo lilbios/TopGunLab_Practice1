@@ -1,0 +1,10 @@
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\bin\Debug\netcoreapp3.1\HomeWork.exe
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\bin\Debug\netcoreapp3.1\HomeWork.deps.json
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\bin\Debug\netcoreapp3.1\HomeWork.runtimeconfig.json
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\bin\Debug\netcoreapp3.1\HomeWork.runtimeconfig.dev.json
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\bin\Debug\netcoreapp3.1\HomeWork.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\bin\Debug\netcoreapp3.1\HomeWork.pdb
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\obj\Debug\netcoreapp3.1\HomeWork.AssemblyInfoInputs.cache
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\obj\Debug\netcoreapp3.1\HomeWork.AssemblyInfo.cs
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\obj\Debug\netcoreapp3.1\HomeWork.dll
+D:\TopGunLab\Practices\TopGunLab_Practice1\HomeWork\obj\Debug\netcoreapp3.1\HomeWork.pdb
