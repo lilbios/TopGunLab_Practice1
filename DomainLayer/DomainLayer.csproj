@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InfrastructureLayer\InfrastructureLayer.csproj" />
     <ProjectReference Include="..\ListImpl\ListImpl.csproj" />
   </ItemGroup>
 

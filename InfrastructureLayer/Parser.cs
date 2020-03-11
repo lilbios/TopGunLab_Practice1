@@ -54,9 +54,10 @@ namespace InfrastructureLayer
         {
             int jersey = random.Next(1, 100);
             int skill = random.Next(1, 100);
-            double lucky = random.NextDouble() % 10;
-           // string playerName = RegExp.Find(@"(\D+ \D+)", values);
-            return null;
+            double lucky = random.NextDouble() * (1.5 + 0.5) - 0.5;
+            string playerName = RegExp.Find(@"(\D+) (\D+)", values);
+            return new Player(playerName, jersey, skill, lucky);
+         
 
         }
 
@@ -66,19 +67,29 @@ namespace InfrastructureLayer
             //Get all tournaments
             var links = driver.FindElements(By.XPath(@".//div[@class='a-center']//a"));
             int randomNumber = random.Next(0, links.Count);
-            driver.Navigate().GoToUrl(links[randomNumber].GetAttribute("href"));
+            var wordCupTitle = links[randomNumber].Text;
+            Team team;
+            if (wordCupTitle != "1934 Soccer World Cup" && wordCupTitle != "1938 Soccer World Cup")
+            {
 
-            //Get all team links in current championship
-            links = driver.FindElements(By.XPath(@".//div[@class='rd-50-25']//a"));
-            randomNumber = random.Next(0, links.Count);
-            driver.Navigate().GoToUrl(links[randomNumber].GetAttribute("href"));
-            var players = driver.FindElements(By.XPath(@".//table[@class='a-left color-alt']//tbody//tr"));
+                driver.Navigate().GoToUrl(links[randomNumber].GetAttribute("href"));
 
-            //Get coach
-            Coach coach = GetCoach(players[players.Count - 1].Text);
-            //Get team name
-            var teamName = driver.FindElement(By.XPath(@".//div[@class='rd-100-33 a-center margen-t3']")).Text;
-            Team team = new Team(teamName, coach);
+                //Get all team links in current championship
+                links = driver.FindElements(By.XPath(@".//div[@class='rd-50-25']//a"));
+                randomNumber = random.Next(0, links.Count);
+                driver.Navigate().GoToUrl(links[randomNumber].GetAttribute("href"));
+                var players = driver.FindElements(By.XPath(@".//table[@class='a-left color-alt']//tbody//tr"));
+
+                //Get coach
+                Coach coach = GetCoach(players[players.Count - 1].Text);
+                //Get team name
+                var teamName = driver.FindElement(By.XPath(@".//div[@class='rd-100-33 a-center margen-t3']")).Text;
+                team = new Team(teamName, coach);
+            }
+            else
+            {
+                team = GetTeam();
+            }
             return team;
         }
 
